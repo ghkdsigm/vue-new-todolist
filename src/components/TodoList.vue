@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cont">
   <transition-group name="list" tag="p"> 
     <li v-for="(todoItem, index) in this.storedTodoItems" v-bind:key="index" class="shadow">
     <i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted:todoItem.completed}" v-on:click="toggleComplete({todoItem, index})"></i>
@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style>
+.cont {padding:0 10px;}
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -45,7 +46,8 @@ li {
   margin: 0.5rem 0;
   padding: 0 0.9rem;
   background: white;
-  border-radius: 5px;
+  border-radius: 5px;    
+  font-size: 13px;
 }
 
 .checkBtn {

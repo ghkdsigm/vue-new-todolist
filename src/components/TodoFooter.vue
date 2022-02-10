@@ -18,9 +18,9 @@ export default {
 <style scoped>
 .clearAllContainer{
   width:8.5rem;
-  height:50px;
-  line-height: 50px;
-  background-color:#fff;
+  height:30px;
+  line-height: 30px;
+  background-color:#ebebeb;
   border-radius: 5px;
   margin:0 auto;
 }
@@ -29,6 +29,7 @@ export default {
   display:block;
   margin-top:25px;
   cursor: pointer;
+    font-size: 13px;
 }
 .clearAllContainer:hover {
   background:#ff2600;
